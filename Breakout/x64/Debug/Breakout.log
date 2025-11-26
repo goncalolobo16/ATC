@@ -1,0 +1,59 @@
+﻿  Bola.cpp
+C:\Users\gonca\source\repos\Breakout\Breakout\Bola.cpp(6,5): error C2248: 'Entidade::posicao': não é possível acessar private membro declarado na classe 'Entidade'
+      C:\Users\gonca\source\repos\Breakout\Breakout\Entidade.h(9,10):
+      consulte a declaração de 'Entidade::posicao'
+      C:\Users\gonca\source\repos\Breakout\Breakout\Entidade.h(7,7):
+      consulte a declaração de 'Entidade'
+  
+C:\Users\gonca\source\repos\Breakout\Breakout\Bola.cpp(7,5): error C2248: 'Entidade::posicao': não é possível acessar private membro declarado na classe 'Entidade'
+      C:\Users\gonca\source\repos\Breakout\Breakout\Entidade.h(9,10):
+      consulte a declaração de 'Entidade::posicao'
+      C:\Users\gonca\source\repos\Breakout\Breakout\Entidade.h(7,7):
+      consulte a declaração de 'Entidade'
+  
+C:\Users\gonca\source\repos\Breakout\Breakout\Bola.cpp(23,5): error C2248: 'Entidade::posicao': não é possível acessar private membro declarado na classe 'Entidade'
+      C:\Users\gonca\source\repos\Breakout\Breakout\Entidade.h(9,10):
+      consulte a declaração de 'Entidade::posicao'
+      C:\Users\gonca\source\repos\Breakout\Breakout\Entidade.h(7,7):
+      consulte a declaração de 'Entidade'
+  
+C:\Users\gonca\source\repos\Breakout\Breakout\Bola.cpp(23,22): warning C4244: '=': conversão de 'int' para 'float', possível perda de dados
+C:\Users\gonca\source\repos\Breakout\Breakout\Bola.cpp(24,5): error C2248: 'Entidade::posicao': não é possível acessar private membro declarado na classe 'Entidade'
+      C:\Users\gonca\source\repos\Breakout\Breakout\Entidade.h(9,10):
+      consulte a declaração de 'Entidade::posicao'
+      C:\Users\gonca\source\repos\Breakout\Breakout\Entidade.h(7,7):
+      consulte a declaração de 'Entidade'
+  
+C:\Users\gonca\source\repos\Breakout\Breakout\Bola.cpp(24,23): warning C4244: '=': conversão de 'int' para 'float', possível perda de dados
+C:\Users\gonca\source\repos\Breakout\Breakout\Bola.cpp(35,17): error C2248: 'Entidade::posicao': não é possível acessar private membro declarado na classe 'Entidade'
+      C:\Users\gonca\source\repos\Breakout\Breakout\Entidade.h(9,10):
+      consulte a declaração de 'Entidade::posicao'
+      C:\Users\gonca\source\repos\Breakout\Breakout\Entidade.h(7,7):
+      consulte a declaração de 'Entidade'
+  
+C:\Users\gonca\source\repos\Breakout\Breakout\Bola.cpp(48,23): warning C4244: '=': conversão de 'int' para 'float', possível perda de dados
+C:\Users\gonca\source\repos\Breakout\Breakout\Bola.cpp(64,9): error C2248: 'Entidade::posicao': não é possível acessar private membro declarado na classe 'Entidade'
+      C:\Users\gonca\source\repos\Breakout\Breakout\Entidade.h(9,10):
+      consulte a declaração de 'Entidade::posicao'
+      C:\Users\gonca\source\repos\Breakout\Breakout\Entidade.h(7,7):
+      consulte a declaração de 'Entidade'
+  
+C:\Users\gonca\source\repos\Breakout\Breakout\Bola.cpp(69,5): error C2248: 'Entidade::posicao': não é possível acessar private membro declarado na classe 'Entidade'
+      C:\Users\gonca\source\repos\Breakout\Breakout\Entidade.h(9,10):
+      consulte a declaração de 'Entidade::posicao'
+      C:\Users\gonca\source\repos\Breakout\Breakout\Entidade.h(7,7):
+      consulte a declaração de 'Entidade'
+  
+  BolaUI.cpp
+C:\Users\gonca\source\repos\Breakout\Breakout\BolaUI.cpp(21,22): error C2039: ' retronaPosicao': não é um membro de 'Bola'
+      C:\Users\gonca\source\repos\Breakout\Breakout\Bola.h(6,7):
+      consulte a declaração de 'Bola'
+  
+C:\Users\gonca\source\repos\Breakout\Breakout\BolaUI.cpp(30,17): error C2039: ' retronaPosicao': não é um membro de 'Bola'
+      C:\Users\gonca\source\repos\Breakout\Breakout\Bola.h(6,7):
+      consulte a declaração de 'Bola'
+  
+  Entidade.cpp
+  MAIN.cpp
+  TestaBola.cpp
+  Gerando Código...
