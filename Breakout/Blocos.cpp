@@ -1,7 +1,8 @@
 #include "Blocos.h"
 
 Blocos::Blocos()
-    : offsetX(2), offsetY(2)   // margem à esquerda/cima
+    : Entidade(),          // <--- chama construtor da classe base
+    offsetX(1), offsetY(2)   // margem à esquerda/cima
 {
     reset();
 }
@@ -10,6 +11,8 @@ void Blocos::reset()
 {
     // 1 = há bloco, 0 = vazio
     int layout[LINHAS][COLUNAS] = {
+        {1,1,1,1,1,1,1,1,1,1},
+        {1,1,1,1,1,1,1,1,1,1},
         {1,1,1,1,1,1,1,1,1,1},
         {1,1,1,1,1,1,1,1,1,1},
         {1,1,1,1,1,1,1,1,1,1},

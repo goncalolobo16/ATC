@@ -32,6 +32,6 @@ void BaseUI::moverBase(int tecla) {
 
 void BaseUI::printar() {
     for (int i = 0; i < (int)largura; ++i) {
-        mvaddch(y, x + i, '-');
+        mvaddch(y, x + i, 223);
     }
 }

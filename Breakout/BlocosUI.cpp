@@ -1,14 +1,13 @@
 #include "BlocosUI.h"
 
 BlocosUI::BlocosUI()
-    : blocos(), simbolo('#')
+    : blocos(), simbolo(219)
 {
 }
 
 void BlocosUI::inicializar()
 {
-    // se quiseres mudar a posição:
-    // blocos.setOffset(2, 2);
+    // blocos.setOffset(2, 2);  // se quiseres mudar
     blocos.reset();
 }
 
@@ -23,7 +22,6 @@ void BlocosUI::printar()
             int x, y;
             blocos.obterPosicao(linha, col, x, y);
 
-            // desenha o bloco como um rectângulo 11x2 de '#'
             for (int dy = 0; dy < Blocos::ALT_BLOCO; ++dy) {
                 for (int dx = 0; dx < Blocos::LARG_BLOCO; ++dx) {
                     mvaddch(y + dy, x + dx, simbolo);

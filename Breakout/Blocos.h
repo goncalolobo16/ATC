@@ -1,15 +1,16 @@
 #pragma once
+#include "Entidade.h"   // <--- ADICIONADO
 
-class Blocos
+class Blocos : public Entidade   // <--- agora herda de Entidade
 {
 public:
     // grelha lógica
-    static const int LINHAS = 4;   // 4 linhas de blocos
+    static const int LINHAS = 6;   // 4 linhas de blocos
     static const int COLUNAS = 10;  // 10 blocos por linha
 
     // dimensões visuais de cada bloco
     static const int LARG_BLOCO = 11; // "###########"
-    static const int ALT_BLOCO = 2;  // 2 linhas
+    static const int ALT_BLOCO = 1;  // 2 linhas
     static const int ESPACO_X = 1;  // 1 coluna vazia entre blocos
     static const int ESPACO_Y = 1;  // 1 linha vazia entre filas
 

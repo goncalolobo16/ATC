@@ -1,16 +1,16 @@
+// Base.h
 #pragma once
 #include "Entidade.h"
-class Base
-{
+
+class Base : public Entidade {
 private:
-	FloatXY posicao;
-	float velocidade;
+    float velocidade;
 
 public:
-	Base();
-	FloatXY retornaPosicao();
-	float retornaVelocidade();
-	void definePosica(float x, float y);
-	
-};
+    Base();
 
+    // mantive estes para nao partires o resto do codigo
+    FloatXY retornaPosicao();   // apenas delega para Entidade
+    float retornaVelocidade();
+    void definePosica(float x, float y); // define posicao absoluta
+};

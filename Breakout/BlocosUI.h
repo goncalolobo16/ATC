@@ -6,12 +6,11 @@ class BlocosUI
 {
 private:
     Blocos blocos;
-    char simbolo;     // carácter usado para desenhar o bloco (ex: '#')
+    int simbolo;     // carácter usado para desenhar o bloco (ex: '#')
 
 public:
     BlocosUI();
 
-    // prepara a parede (offset + layout inicial)
     void inicializar();
 
     // desenha todos os blocos ativos

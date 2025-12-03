@@ -1,20 +1,27 @@
 #include "Base.h"
-#include "Entidade.h"
 
-Base::Base() {
-	posicao.x = 0;
-	posicao.y = 0;
-	velocidade = 1;
+Base::Base() : Entidade() {
+    // posicao ja comeca em (0,0) por causa da Entidade
+    velocidade = 1.0f;
 }
 
 FloatXY Base::retornaPosicao() {
-	return posicao;
+    // usa o getter da Entidade
+    return Entidade::retornaPosicao();
 }
 
-float Base::retornaVelocidade(){
-	return velocidade;
+float Base::retornaVelocidade() {
+    return velocidade;
 }
+
 void Base::definePosica(float x, float y) {
-	posicao.x = x;
-	posicao.y = y;
+    // esta funcao continua a definir posicao absoluta,
+    // mas por baixo usa o definePosicao(dx, dy) da Entidade
+
+    FloatXY atual = Entidade::retornaPosicao();
+    float dx = x - atual.x;
+    float dy = y - atual.y;
+
+    // chama o metodo da Entidade (delta)
+    definePosicao(dx, dy); // Entidade::definePosicao(dx, dy)
 }
