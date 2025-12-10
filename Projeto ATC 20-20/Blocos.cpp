@@ -1,8 +1,6 @@
 #include "Blocos.h"
 
-Blocos::Blocos()
-    : Entidade(),          // <--- chama construtor da classe base
-    offsetX(1), offsetY(2)   // margem à esquerda/cima
+Blocos::Blocos(): Entidade(),offsetX(1), offsetY(2)   // margem à esquerda/cima
 {
     reset();
 }
@@ -65,7 +63,7 @@ bool Blocos::colideEDestroiBloco(const FloatXY& posBola)
             float topo = static_cast<float>(y);
             float fundo = topo + ALT_BLOCO;
 
-            // bola é 1x1, assumimos que a posição é o "centro"
+            
             if (posBola.x >= esquerda && posBola.x < direita &&
                 posBola.y >= topo && posBola.y < fundo)
             {
@@ -76,5 +74,5 @@ bool Blocos::colideEDestroiBloco(const FloatXY& posBola)
         }
     }
 
-    return false; // não bateu em bloco nenhum
+    return false; 
 }

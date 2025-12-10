@@ -34,27 +34,10 @@ public:
     // colisão retângulo vs retângulo (AABB)
     bool colideCom(const Entidade& outra) const;
 
-    // ---- INTERAÇÕES ESPECÍFICAS DE JOGO ----
-    // 1) Atualiza a bola com base na velocidade e nos limites do ecrã.
-    //    Esta função É basicamente o teu Bola::atualizar,
-    //    mas metida aqui.
-    //    - bola      : a entidade que representa a bola
-    //    - velocidade: velocidade da bola (x,y)
-    //    - emJogo    : bool que diz se a bola ainda está ativa
-    //    - maxCols, maxLines: tamanho do ecrã
-    static void atualizarBolaLimites(Entidade& bola,
-        FloatXY& velocidade,
-        bool& emJogo,
-        int maxCols,
-        int maxLines);
 
-    // 2) Tratar colisão bola ? base
-    //    - bola      : entidade da bola
-    //    - velocidade: velocidade da bola (alterada se bater)
-    //    - base      : entidade da base
-    static void tratarColisaoBolaBase(Entidade& bola,
-        FloatXY& velocidade,
-        const Entidade& base);
+    static void atualizarBolaLimites(Entidade& bola,FloatXY& velocidade,bool& emJogo,int maxCols,int maxLines);
+
+    static void tratarColisaoBolaBase(Entidade& bola,FloatXY& velocidade,const Entidade& base);
 
  
 };

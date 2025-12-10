@@ -7,7 +7,6 @@ BolaUI::BolaUI()
 }
 
 void BolaUI::inicializar() {
-    // inicializa a bola com o tamanho atual do ecrã
     bola.inicializar(COLS, LINES);
 }
 
@@ -18,10 +17,10 @@ void BolaUI::moverBola(const Base& base) {
 
 void BolaUI::printar() {
     if (!bola.estaEmJogo())
-        return;    // se caiu no void, nao desenha
+        return;    
 
-    FloatXY p = bola.retornaPosicao();   // <-- aqui estava retronaPosicao()
-    mvaddch((int)p.y, (int)p.x, 'o');
+    FloatXY p = bola.retornaPosicao();   
+    mvaddch((int)p.y, (int)p.x, 'O');
 }
 
 bool BolaUI::estaAtiva() const {
@@ -32,3 +31,8 @@ FloatXY BolaUI::retornaPosicao() {
     return bola.retornaPosicao();
 }
 
+FloatXY BolaUI::retornaVelocidade()
+{ return bola.retornaVelocidade(); }
+
+void BolaUI::mudaVelocidade(float vx, float vy)
+{ bola.mudaVelocidade(vx, vy); }

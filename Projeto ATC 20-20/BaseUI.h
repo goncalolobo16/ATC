@@ -1,8 +1,10 @@
 #pragma once
 #include <curses.h>
 #include "Base.h"
+#include "Desenha.h"
 
-class BaseUI {
+class BaseUI :public Desenha
+{
     Base base;
 
 public:
@@ -10,7 +12,7 @@ public:
 
     void inicializar();
     void moverBase(int tecla);
-    void printar();
+    void printar()override;
 
     const Base& getBase() const { return base; }
 };

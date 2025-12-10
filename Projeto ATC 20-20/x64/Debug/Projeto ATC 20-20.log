@@ -1,9 +1,5 @@
-﻿  Blocos.cpp
-  Bola.cpp
-  Entidade.cpp
-C:\Users\Omen\source\repos\Nova pasta\Projeto ATC 20-20\Entidade.cpp(137,22): warning C4244: 'inicializando': conversão de 'double' para 'float', possível perda de dados
-C:\Users\Omen\source\repos\Nova pasta\Projeto ATC 20-20\Entidade.cpp(139,17): warning C4244: 'inicializando': conversão de 'double' para 'float', possível perda de dados
-C:\Users\Omen\source\repos\Nova pasta\Projeto ATC 20-20\Entidade.cpp(145,26): warning C4244: '=': conversão de 'double' para 'float', possível perda de dados
+﻿  Jogo.cpp
   Main.cpp
-C:\Users\Omen\source\repos\Nova pasta\Projeto ATC 20-20\Main.cpp(1,10): error C1083: Não é possível abrir arquivo incluir: 'curses.h': No such file or directory
   Gerando Código...
+LINK : warning LNK4098: defaultlib 'LIBCMT' conflita com uso de outras bibliotecas; use /NODEFAULTLIB:library
+  Projeto ATC 20-20.vcxproj -> C:\Users\gonca\source\repos\Projeto ATC 20-20\x64\Debug\Projeto ATC 20-20.exe

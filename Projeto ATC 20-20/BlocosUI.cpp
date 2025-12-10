@@ -1,9 +1,6 @@
 #include "BlocosUI.h"
 
-BlocosUI::BlocosUI()
-    : blocos(), simbolo(219)
-{
-}
+BlocosUI::BlocosUI(): blocos(), simbolo(219){}
 
 void BlocosUI::inicializar()
 {
